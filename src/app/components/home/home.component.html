@@ -1,0 +1,7 @@
+<!-- <ul>   // esto no fue nada mas que una ejemplificacion util de como hacer peticiones http
+    <li *ngFor="let pais of paises">
+        {{pais.name}} - {{pais.population | number}}
+    </li>
+</ul> -->
+<app-loading *ngIf="loading"></app-loading>
+<app-tarjetas [items]="nuevasCanciones"></app-tarjetas>
