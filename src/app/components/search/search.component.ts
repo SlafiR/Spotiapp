@@ -17,7 +17,7 @@ export class SearchComponent {
     this.loading = true;
     let context = this
     setTimeout(()=> {
-      context.spotify.getArtista(termino)
+      context.spotify.getArtistas(termino)
       .subscribe((data: any) => {
         console.log(data);
         context.artistas = data;
